@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+/**
+ * @brief Converts a string to an integer: ASCII to integer
+ * 
+ * @param str A pointer to the string to be converted
+ * @return Returns the converted integer value
+ */
 int	ft_atoi(const char *str)
 {
 	int	i;

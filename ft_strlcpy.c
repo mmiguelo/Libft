@@ -12,24 +12,31 @@
 
 #include "libft.h"
 
-/*strlcpy() does a strlen() on the src string so it returns the lenght 
-in case of the size of dest be 0.
-dest[i] has to end with null*/
-
+/**
+ * @brief Copies strings while ensuring that the destination buffer is 
+ * not overflowed.
+ * 
+ * @param dst A pointer to the destination string
+ * @param src A pointer to the source string
+ * @param size Size of destination buffer, including the space for '\0'
+ * @return Returns the total lenght of the string that was created.
+ */
 int	ft_strlcpy(char *dst, char *src, size_t size)
 {
 	size_t	i;
-	size_t	lenght;
+	size_t	length;
 
-	lenght = ft_strlen(src);
 	if (!dst || !src)
 		return (0);
+	length = ft_strlen(src);
 	if (size == 0)
-		return (lenght);
+		return (length);
+	i = 0;
 	while (src[i] != '\0' && (i < size - 1))
 	{
 		dst[i] = src[i];
 		i++;
 	}
 	dst[i] = '\0';
+	return (length);
 }

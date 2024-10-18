@@ -12,13 +12,15 @@
 
 #include "libft.h"
 
-/*strlcat() does a strlen() on the src string so it returns the lenght in case 
-of the size of dest be 0, also does a strlen() on the dest so it can append 
-the Nul-terminated strinc src to the end of dst.
-dest[i] has to end with null*/
-
-/*is ft_strlen() a static function??*/
-
+/**
+ * @brief concatenates strings while ensuring that the destination buffer 
+ * is not overflowed.
+ * 
+ * @param dst A pointer to the destination string
+ * @param src A pointer to the source string
+ * @param size Size of destination buffer, including the space for '\0'
+ * @return Returns the total lenght of the string that was created.
+ */
 size_t	ft_strlcat(char *dst, char *src, size_t size)
 {
 	size_t	i;

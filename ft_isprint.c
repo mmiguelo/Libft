@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+/**
+ * @brief Checks if a given character is a printable character.
+ * 
+ * @param c The character to be checked.
+ * @return Returns a non-zero value if true and zero if false.
+ */
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)

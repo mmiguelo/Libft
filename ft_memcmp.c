@@ -6,14 +6,14 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 10:51:32 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/18 14:47:32 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/18 19:20:04 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief function used to compare two blocks of memory byte by byte.
+ * @brief compares two blocks of memory byte by byte.
  * 
  * @param s1 A pointer to the first block of memory.
  * @param s2 A pointer to the second block of memory.
