@@ -19,7 +19,7 @@ dest[i] has to end with null*/
 
 /*is ft_strlen() a static function??*/
 
-int	ft_strlcat(char *dst, char *src, size_t size)
+size_t	ft_strlcat(char *dst, char *src, size_t size)
 {
 	size_t	i;
 	size_t	lenght_src;
