@@ -6,25 +6,28 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 12:02:37 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/16 12:31:20 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/21 19:28:30 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/* what is the difference between unsigned int and size_t*/
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+/**
+ * @brief Compares a specified number of characters from two strings
+ * 
+ * @param s1 Pointer to the first string.
+ * @param s2 Pointer to the second string
+ * @param n Maximum number of characters to compare
+ * @return Returns an int less than, equal to, or greater than zero.
+ */
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
-	while (i < n && s1[i] != '\0' && s2[i] != '\0')
-	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
+	if (n == 0)
+		return (0);
+	while ((i < n - 1) && (s1[i] == s2[i]) && s1[i] && s2[i])
 		i++;
-	}
-	if (i != n)
-		return (s1[i] - s2[i]);
-	return (0);
+	return ((unsigned char) s1[i] - (unsigned char) s2[i]);
 }

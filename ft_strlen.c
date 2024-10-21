@@ -12,7 +12,13 @@
 
 #include "libft.h"
 
-size_t	ft_strlen(char *str)
+/**
+ * @brief determines the length of a null terminated string.
+ * 
+ * @param str A pointer to the string to calculate the length.
+ * @return Returns the number of characters in the string.
+ */
+size_t	ft_strlen(const char *str)
 {
 	size_t	i;
 
