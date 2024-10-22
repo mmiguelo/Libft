@@ -48,4 +48,3 @@ size_t	ft_strlcat(char *dst, char *src, size_t size)
 		length_dst = size;
 	return (length_dst + length_src);
 }
-
