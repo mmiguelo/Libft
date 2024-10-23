@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 10:51:32 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/21 14:51:49 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/23 12:54:07 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*str1;
 	unsigned char	*str2;
-	int				i;
+	size_t			i;
 
 	if (n == 0)
 		return (0);

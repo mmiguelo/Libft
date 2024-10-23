@@ -21,14 +21,16 @@
  */
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
+	int		i;
+	char	*cpy;
 
 	i = 0;
+	cpy = (char *)s;
 	if (!s)
 		return (NULL);
 	while (s[i] && s[i] != (char)c)
 		i++;
 	if (s[i] == (char)c)
-		return (s + i);
+		return (cpy + i);
 	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 11:47:37 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/22 15:43:51 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/23 15:19:07 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ of ’f’.
  */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned int	i;
-	char			*str;
-	int				length;
+	unsigned int				i;
+	char						*str;
+	unsigned int				length;
 
 	length = ft_strlen(s);
 	if (!s || !f)

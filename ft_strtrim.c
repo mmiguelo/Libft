@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 11:45:50 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/22 18:59:01 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/23 15:46:01 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = ft_strlen(s1);
 	while (end > start && ft_look_for_set(s1[end - 1], set))
 		end--;
-	new = ft_calloc(ft_strlen(s1) + 1, sizeof(char));
+	new = ft_calloc(end - start + 1, sizeof(char));
 	if (!new)
 		return (NULL);
 	i = 0;

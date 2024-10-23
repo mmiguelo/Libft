@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 11:45:13 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/22 12:00:58 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/23 15:18:32 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	new = ft_calloc((s1_length + s2_length +1), sizeof(char));
 	if (!new)
 		return (NULL);
-	ft_strlcpy(new, s1, s1_length + 1);
-	ft_strlcpy((new + s1_length), s2, s2_length + 1);
+	ft_strlcpy(new, (char *) s1, s1_length + 1);
+	ft_strlcpy(new + s1_length, (char *) s2, s2_length + 1);
 	return (new);
 }

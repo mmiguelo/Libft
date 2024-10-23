@@ -16,8 +16,11 @@
 #==============================================================================#
 
 NAME = libft.a
-CFlags = -Wall -Werror -Wextra
+EXEC = libft_tester
+CC = cc
+CFLAGS = -Wall -Werror -Wextra -g
 RM = rm -f
+
 
 
 #==============================================================================#
@@ -70,6 +73,8 @@ all: $(NAME)
 $(NAME): $(OBJ)
 		ar rc $(NAME) $(OBJ)
 
+test: $(NAME)
+		$(CC) $(CFLAGS) 
 clean:
 		$(RM) $(OBJ)
 fclean: clean
