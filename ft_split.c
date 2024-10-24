@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 11:46:27 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/24 13:06:50 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/24 15:41:15 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,8 @@ static int	ft_count_elements(char const *s, char c)
 }
 
 /**
- * @brief counts the number of chars within a string, until the delimiter is found
+ * @brief counts the number of chars within a string, 
+ * until the delimiter is found
  * 
  * @param s The string to look
  * @param c The delimiter character
@@ -145,7 +146,8 @@ char	**ft_split(char const *s, char c)
 	//printf("%s\n", ft_split(str, ' '));
 	//split(str, ' ');
 	
-	if (!(str = ft_split("lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse", ' ')))
+	if (!(str = ft_split("lorem ipsum dolor sit amet, consectetur \
+	adipiscing elit. Sed non risus. Suspendisse", ' ')))
         printf("NULL");
     else
     {

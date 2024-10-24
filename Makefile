@@ -16,7 +16,7 @@
 #==============================================================================#
 
 NAME = libft.a
-EXEC = libft_tester
+EXEC = libft_tester.out
 CC = cc
 CFLAGS = -Wall -Werror -Wextra -g
 RM = rm -f
@@ -60,9 +60,18 @@ SRCS = ft_atoi.c \
 		ft_strtrim.c \
 		ft_substr.c \
 		ft_tolower.c \
-		ft_toupper.c \
+		ft_toupper.c
 
 OBJ = $(SRCS:.c=.o)
+
+BONUS = ft_lstnew.c \
+		ft_lstadd_front.c \
+
+BONUS_OBJ = $(BONUS:.c.o)
+
+SRC_TESTS = main.c 
+
+OBJ_TEST = $(SRC_TESTS:.c=.o)
 
 #==============================================================================#
 #                                    RULES                                     #
@@ -71,14 +80,20 @@ OBJ = $(SRCS:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-		ar rc $(NAME) $(OBJ)
+		ar rcs $(NAME) $(OBJ)
+
+bonus: $(BONUS) $(BONUS_OBJ)
+		ar rcs $(NAME) $(OBJ) $(BONUS_OBJ)
 
 test: $(NAME)
-		$(CC) $(CFLAGS) 
+		$(CC) $(CFLAGS) main.c $(NAME) -o $(EXEC) 
+
 clean:
-		$(RM) $(OBJ)
+		$(RM) $(OBJ) $(BONUS_OBJ)
+
 fclean: clean
 		$(RM) $(NAME)
+
 re: clean all
 
 PHONY: all clean fclean re
