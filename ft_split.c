@@ -6,13 +6,20 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 11:46:27 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/23 16:13:29 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/24 13:06:50 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_count_words(char const *s, char c)
+/**
+ * @brief Counts the number of segments within a string delimited by a 'c'
+ * 
+ * @param s The string to look
+ * @param c The delimiter character
+ * @return The amount of elements
+ */
+static int	ft_count_elements(char const *s, char c)
 {
 	int	i;
 	int	words;
@@ -31,6 +38,13 @@ static int	ft_count_words(char const *s, char c)
 	return (words);
 }
 
+/**
+ * @brief counts the number of chars within a string, until the delimiter is found
+ * 
+ * @param s The string to look
+ * @param c The delimiter character
+ * @return The amount fo chars
+ */
 static int	ft_count_letters(char const *s, char c)
 {
 	int	i;
@@ -49,13 +63,40 @@ static int	ft_count_letters(char const *s, char c)
 	return (letters);
 }
 
+/**
+ * @brief Copies a string for 'a' amount of chars to an empty string
+ * 
+ * @param s The string to copy
+ * @param a The amount of chars to copy
+ * @return Returns the pointer to the string copied 
+ */
 static char	*ft_copy_words(char const *s, int a)
 {
 	char	*str;
 
 	str = ft_calloc(a, sizeof(char));
+	if (!str)
+		return (NULL);
 	ft_strlcpy(str, (char *)s, a);
 	return (str);
+}
+
+/**
+ * @brief Frees the memory of an array char by char
+ * 
+ * @param s The array to free
+ * @param i The number os chars to free
+ * @return Returns NULL
+ */
+static char	**ft_free_mem(char const **s, int i)
+{
+	while (i > 0)
+	{
+		i--;
+		free((void *)s[i]);
+	}
+	free (s);
+	return (NULL);
 }
 
 /**
@@ -76,20 +117,20 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	column = ft_count_words(s, c);
+	column = ft_count_elements(s, c);
 	array = ft_calloc(column + 1, sizeof(char *));
 	if (!array)
 		return (NULL);
 	i = 0;
-	while (column)
+	while (column--)
 	{
 		while (*s && *s == c)
 			s++;
 		line = ft_count_letters(s, c);
 		array[i] = ft_copy_words((char const *) s, line);
-		if (!array[i++])
-			return (NULL);
-		column--;
+		if (!array[i])
+			return (ft_free_mem((const char **) array, i));
+		i++;
 		while (*s && *s != c)
 			s++;
 	}
