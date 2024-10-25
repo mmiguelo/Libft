@@ -1,27 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 16:57:06 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/25 17:18:02 by mmiguelo         ###   ########.fr       */
+/*   Created: 2024/10/25 15:19:44 by mmiguelo          #+#    #+#             */
+/*   Updated: 2024/10/25 17:34:07 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list	*one;
+	t_list	*temp;
 
-	one = malloc(sizeof(t_list));
-	if (!one)
-		return (NULL);
-	one->content = ft_strdup((char *)content);
-	one->next = NULL;
-	return (one);
+	if (!lst || !new)
+		return ;
+	if (!*lst)
+		*lst = new;
+	else
+	{
+		temp = ft_lstlast(*lst);
+		temp->next = new;
+	}
 }
 
 /* static void	print_list(t_list *lst)
@@ -36,20 +39,38 @@ t_list	*ft_lstnew(void *content)
 
 int	main(void)
 {
+	t_list	*node2;
 	t_list	*node1;
 	t_list	*head;
+	t_list	*node3;
 
-	head = NULL;
-	print_list(head);
+	node2 = ft_lstnew("Node 2");
+	if(node2 == NULL)
+	{
+		printf("Failed\n");
+		return (1);
+	}
 	node1 = ft_lstnew("Node 1");
 	if(node1 == NULL)
 	{
 		printf("Failed\n");
 		return (1);
 	}
+	node3 = ft_lstnew("Node 3");
+	if(node3 == NULL)
+	{
+		printf("Failed\n");
+		return (1);
+	}
 	head = node1;
-	printf("Linked list after adding node1\n");
+	node1->next = node2;
+	printf("Linked list before adding last node:\n");
+	print_list(head);
+	printf("Linked list after adding node1 to the back:\n");
+	ft_lstadd_back(&head, node3);
 	print_list(head);
 	free(node1);
+	free(node2);
+	free(node3);
 	return (0);
 } */

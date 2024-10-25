@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 17:33:36 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/24 18:08:37 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/25 17:33:50 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
+	if (!lst || !new)
+		return ;
 	if (lst && new)
 	{
 		new->next = *lst;
@@ -21,7 +23,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	}
 }
 
-void	print_list(t_list *lst)
+/* static void	print_list(t_list *lst)
 {
 	while (lst)
 	{
@@ -31,7 +33,7 @@ void	print_list(t_list *lst)
 	printf("NULL\n");
 }
 
-/* int	main(void)
+int	main(void)
 {
 	t_list	*node2;
 	t_list	*node1;
@@ -52,7 +54,7 @@ void	print_list(t_list *lst)
 	head = node2;
 	print_list(head);
 	ft_lstadd_front(&head, node1);
-	printf("Linked list after adding mpde1 to the front\n");
+	printf("Linked list after adding node1 to the front\n");
 	print_list(head);
 	free(node1);
 	free(node2);

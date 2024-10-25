@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 16:57:06 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/25 17:18:02 by mmiguelo         ###   ########.fr       */
+/*   Created: 2024/10/25 14:47:18 by mmiguelo          #+#    #+#             */
+/*   Updated: 2024/10/25 15:46:06 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+t_list	*ft_lstlast(t_list *lst)
 {
-	t_list	*one;
+	t_list	*last;
+	t_list	*temp;
 
-	one = malloc(sizeof(t_list));
-	if (!one)
+	if (!lst)
 		return (NULL);
-	one->content = ft_strdup((char *)content);
-	one->next = NULL;
-	return (one);
+	temp = lst;
+	while (temp->next != NULL)
+		temp = temp->next;
+	last = temp;
+	return (last);
 }
 
 /* static void	print_list(t_list *lst)
@@ -36,20 +38,31 @@ t_list	*ft_lstnew(void *content)
 
 int	main(void)
 {
+	t_list	*node2;
 	t_list	*node1;
 	t_list	*head;
+	t_list	*last;
 
-	head = NULL;
-	print_list(head);
+	node2 = ft_lstnew("Node 2");
+	if(node2 == NULL)
+	{
+		printf("Failed\n");
+		return (1);
+	}
 	node1 = ft_lstnew("Node 1");
 	if(node1 == NULL)
 	{
 		printf("Failed\n");
 		return (1);
 	}
+	node1->next = node2;
 	head = node1;
-	printf("Linked list after adding node1\n");
+	printf("order list:\n");
 	print_list(head);
-	free(node1);
+	printf("Last node is:\n");
+	last = ft_lstlast(head);
+	printf("%s\n", (char *)last->content);
+	free(head);
+	free(node2);
 	return (0);
 } */
