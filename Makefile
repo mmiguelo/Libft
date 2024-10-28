@@ -17,7 +17,7 @@
 
 NAME = libft.a
 EXEC = libft_tester.out
-CC = cc
+CC = gcc
 CFLAGS = -Wall -Werror -Wextra -g
 RM = rm -f
 
@@ -27,8 +27,8 @@ RM = rm -f
 #                                    FILES                                     #
 #==============================================================================#
 
-SRCS = ft_atoi.c \
-		ft_bzero.c \
+SRCS =	ft_bzero.c \
+		ft_atoi.c \
 		ft_calloc.c \
 		ft_isalnum.c \
 		ft_isalpha.c \
@@ -70,9 +70,11 @@ BONUS = ft_lstnew.c \
 		ft_lstlast.c \
 		ft_lstadd_back.c \
 		ft_lstdelone.c \
-		ft_lstclear \
+		ft_lstclear.c \
+		ft_lstiter.c \
+		ft_lstmap.c
 
-BONUS_OBJ = $(BONUS:.c.o)
+BONUS_OBJ = $(BONUS:.c=.o)
 
 SRC_TESTS = main.c 
 
@@ -87,7 +89,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 		ar rcs $(NAME) $(OBJ)
 
-bonus: $(BONUS) $(BONUS_OBJ)
+bonus: $(BONUS) all $(BONUS_OBJ)
 		ar rcs $(NAME) $(OBJ) $(BONUS_OBJ)
 
 test: $(NAME)

@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:13:34 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/25 17:33:59 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/28 14:41:13 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ int	ft_lstsize(t_list *lst)
 	t_list	*temp;
 
 	if (!lst)
-		return (NULL);
+		return (0);
 	i = 0;
 	temp = lst;
-	while (temp != NULL)
+	while (temp)
 	{
 		i++;
 		temp = temp->next;
