@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 10:51:32 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/29 15:12:25 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:12:31 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,18 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (str1[i] - str2[i]);
 }
 
-int	main(void)
+/* int	main(void)
 {
-	char	*s = "Bom dia";
-	char	*s2 = "Bom dia";
-	char	*s3 = "Bom  dia";
+	const char	*s1 = "Bom dia";
+	const char	*s2 = "Bom dia";
+	const char	*s3 = "Boa noite";
+	const char	*s4 = "Bom!";
+	size_t	n = 7;
 
-	ft_memcmp()
-}
+	printf("Comparing memory between s1 and s2 which are identical str:\n");
+	printf("%d", ft_memcmp(s1, s2, n)); //should be 0
+	printf("\nComparing memory between s1 and s3 which are different strings:\n");
+	printf("%d", ft_memcmp(s1, s3, n)); // should be positive
+	printf("\nComparing memory between s1 and s4 which are different lenghts (same content in first 3 chars):\n");
+	printf("%d", ft_memcmp(s1, s4, n)); // should be negative
+} */
