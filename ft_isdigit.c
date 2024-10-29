@@ -24,3 +24,17 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
+
+/* int	main(void)
+{
+	int	c;
+	int	c2;
+
+	c = '5';
+	c2 = '\n';
+	printf("is a digit:");
+	printf("\n%d\n", ft_isdigit(c));
+	printf("is not a digit:");
+	printf("\n%d\n", ft_isdigit(c2));
+	return (0);
+} */

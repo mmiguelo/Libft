@@ -24,3 +24,17 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
+
+/* int	main(void)
+{
+	int	c;
+	int	c2;
+
+	c = 'B';
+	c2 = '5';
+	printf("alphabetical:");
+	printf("\n%d\n", ft_isalpha(c));
+	printf("non alphabetical:");
+	printf("\n%d\n", ft_isalpha(c2));
+	return (0);
+} */

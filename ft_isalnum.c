@@ -25,3 +25,17 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
+
+/* int	main(void)
+{
+	int	c;
+	int	c2;
+
+	c = 'B';
+	c2 = '\n';
+	printf("alphanumerical:");
+	printf("\n%d\n", ft_isalnum(c));
+	printf("non alphanumerical:");
+	printf("\n%d\n", ft_isalnum(c2));
+	return (0);
+} */

@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 10:51:32 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/23 12:54:07 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/29 15:12:25 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,13 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (str1[i] == str2[i] && i < n - 1)
 		i++;
 	return (str1[i] - str2[i]);
+}
+
+int	main(void)
+{
+	char	*s = "Bom dia";
+	char	*s2 = "Bom dia";
+	char	*s3 = "Bom  dia";
+
+	ft_memcmp()
 }

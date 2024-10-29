@@ -24,3 +24,17 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
+
+/* int	main(void)
+{
+	int	c;
+	int	c2;
+
+	c = 5;
+	c2 = 128;
+	printf("is ascii:");
+	printf("\n%d\n", ft_isascii(c));
+	printf("is not ascii:");
+	printf("\n%d\n", ft_isascii(c2));
+	return (0);
+} */

@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 10:51:39 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/23 12:53:36 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/29 15:08:48 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,3 +40,18 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
+
+/* int	main(void)
+{
+	const char	*str = "Bom dia!";
+	char		c = 'm';
+	size_t		n = strlen(str);
+	
+	char	*result = ft_memchr(str, c, n);
+
+	if (result)
+		printf("Character '%c' found at position: %ld\n", c, result - str);
+	else
+		printf("Character '%c' not found in the string.\n", c);
+	return (0);
+} */

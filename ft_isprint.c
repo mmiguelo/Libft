@@ -24,3 +24,17 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+
+/* int	main(void)
+{
+	int	c;
+	int	c2;
+
+	c = 35;
+	c2 = 25;
+	printf("is printable:");
+	printf("\n%d\n", ft_isprint(c));
+	printf("is not printable:");
+	printf("\n%d\n", ft_isprint(c2));
+	return (0);
+} */

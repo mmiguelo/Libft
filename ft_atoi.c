@@ -44,3 +44,23 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
+
+/* int	main(void)
+{
+	printf("empty parameter:");
+	printf("\n%d\n", ft_atoi(""));
+	printf("zero, positive and negative int:");
+	printf("\n%d\n", ft_atoi("0"));
+	printf("%d\n", ft_atoi("+1234   "));
+	printf("%d\n", ft_atoi("-1234   "));
+	printf("several signs in a row:");
+	printf("\n%d\n", ft_atoi("--1234   "));
+	printf("%d\n", ft_atoi("+-++-+-+-2147483647    "));
+	printf("above int max:");
+	printf("\n%d\n", ft_atoi("2147483648   "));
+	printf("int max and int min:");
+	printf("\n%d\n", ft_atoi("2147483647"));
+	printf("%d\n", ft_atoi("-2147483648"));
+	printf("tabs and newlines:");
+	printf("\n%d\n", ft_atoi("    \t\t\t\n\n1234\t\t\n"));
+} */

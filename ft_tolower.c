@@ -24,3 +24,12 @@ int	ft_tolower(int c)
 		c += 32;
 	return (c);
 }
+
+/* int	main(void)
+{
+	char	c;
+
+	c = 'B';
+	printf("%c\n", ft_tolower(c));
+	return (0);
+} */

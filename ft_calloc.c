@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 10:44:36 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/21 11:12:04 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/29 12:01:48 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,29 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero (ptr, nmemb * size);
 	return (ptr);
 }
+
+/* int main(void) 
+{
+    size_t num_elements = 5;
+    size_t size_of_element = sizeof(int);
+	int	len = 5;
+	int i = 0;
+	
+    // Call ft_calloc
+    int *arr = (int *)ft_calloc(num_elements, size_of_element);
+    
+    // Check if allocation was successful
+    if (arr == NULL) {
+        printf("Memory allocation failed\n");
+        return 1;
+    }
+	printf("allocating memory for each element of the array:\n");
+    while (i < len)
+	{
+		printf("arr[%d] = %d\n", i, arr[i]);
+		i++;
+	}
+    free(arr);
+
+    return 0;
+} */

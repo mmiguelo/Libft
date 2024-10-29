@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 11:47:05 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/22 19:00:49 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/29 12:02:55 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,3 +72,17 @@ char	*ft_itoa(int n)
 	str = ft_convert_to_char(str, number, length);
 	return (str);
 }
+
+/* int	main(void)
+{
+	printf("zero, positive and negative int:");
+	printf("\n%s\n", ft_itoa(0));
+	printf("%s\n", ft_itoa(+1234   ));
+	printf("%s\n", ft_itoa(-1234   ));
+	printf("several signs in a row:");
+	printf("\n%s\n", ft_itoa(-+-1234   ));
+	printf("%s\n", ft_itoa(+-+-+-+-+-2147483647    ));
+	printf("int max and int min:");
+	printf("\n%s\n", ft_itoa(2147483647));
+	printf("%s\n", ft_itoa(-2147483648));
+} */
