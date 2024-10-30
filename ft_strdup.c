@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 11:11:57 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/23 15:15:51 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/30 15:19:03 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,13 @@ char	*ft_strdup(const char *s)
 	ft_strlcpy((char *) dest, (char *) s, ft_strlen(s) + 1);
 	return (dest);
 }
+
+/* int	main(void)
+{
+	char	*src;
+	char	*dest;
+
+	src = "test this string";
+	dest = ft_strdup(src);
+	printf("%s", dest);
+} */

@@ -34,3 +34,14 @@ char	*ft_strchr(const char *s, int c)
 		return (cpy + i);
 	return (NULL);
 }
+
+/* int main(void)
+{
+	char	*str = "test this string";
+	int		c = 'h';
+	int		c2 = 'x';
+
+	printf("String before: %s\n", str);
+	printf("searching for h:%s\n", ft_strchr(str, c));
+	printf("searching for x:%s\n", ft_strchr(str, c2));
+} */
