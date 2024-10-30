@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 10:54:29 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/28 17:38:43 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/30 17:08:05 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,14 @@ char	*ft_strrchr(const char *str, int c)
 		return ((char *)str + i);
 	return (NULL);
 }
+
+/* int	main(void)
+{
+	char	*str = "This is a x string x to test";
+	char	c = 'x';
+	char	c2 = 'c';
+
+	printf("%s\n", ft_strrchr(str, c));
+	printf("%s\n", ft_strrchr(str, c2));
+	return (0);
+} */
