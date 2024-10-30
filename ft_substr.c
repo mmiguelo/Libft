@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 11:44:15 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/23 15:21:33 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/30 17:24:00 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,3 +46,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	dest[i] = '\0';
 	return (dest);
 }
+
+/* int	main(void)
+{
+	char	*str = "test in this string";
+	int		start = 8;
+	size_t	lenght = 14;
+
+	printf("Original string: %s\n", str);
+	printf("The substring: %s", ft_substr(str, start, lenght));
+	return (0);
+} */
