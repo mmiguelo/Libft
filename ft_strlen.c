@@ -27,3 +27,13 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
+
+/* int	main(void)
+{
+	char	*str;
+
+	str = "this str has length of 25";
+	printf("%s\n", str);
+	printf("length is: %zu", ft_strlen(str));
+	return (0);
+} */
