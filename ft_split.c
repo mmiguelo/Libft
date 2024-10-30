@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 11:46:27 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/24 15:41:15 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/30 14:24:42 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -140,27 +140,21 @@ char	**ft_split(char const *s, char c)
 
 /* int	main()
 {
-	char **str = NULL;
-	int	i = 0;
-
-	//printf("%s\n", ft_split(str, ' '));
-	//split(str, ' ');
+	char	*str = "Hi, my name is Marco!";
+	int		i = 0;
 	
-	if (!(str = ft_split("lorem ipsum dolor sit amet, consectetur \
-	adipiscing elit. Sed non risus. Suspendisse", ' ')))
-        printf("NULL");
-    else
-    {
-        while (str[i] != NULL)
-        {
-            printf("%s", str[i]);
-            write(1, "\n", 1);
-            i++;
-        }
-    }
-	char ** tab;
-	
-	char * splitme = strdup("Tripouille");
-	tab = ft_split(splitme, ' ');
-	
-}*/
+	printf("Before doing split:\n%s\n", str);
+	char **result = ft_split(str, ' ');
+	if (!result)
+	{
+		printf("Memory allocation failed\n");
+		return (1);
+	}
+	while (result[i] != NULL)
+	{
+		printf("Substring %d: %s\n", i, result[i]);
+        free(result[i]);
+        i++;
+	}
+	free (result);
+} */

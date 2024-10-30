@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 15:31:49 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/18 20:06:44 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/30 13:53:25 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,16 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (ptr);
 }
+
+/* int	main(void)
+{
+	char	str[20] = "XXXXXXXXXXXXXXX";
+	
+	printf("str before memset: %s\n", str);
+	ft_memset(str, 'A', 3);
+	printf("str after memset: %s\n", str);
+	ft_memset(str + 3, 'B', 3);
+	printf("str after memset: %s\n", str);
+	ft_memset(str + 6, 'C', 3);
+	printf("str after memset: %s\n", str);
+} */
