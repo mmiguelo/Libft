@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 11:50:36 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/22 15:04:14 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/30 19:40:55 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,15 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd((n + '0'), fd);
 }
 
-/* int main()
+/* int	main(void)
 {
-	int fd = open("teste.txt", O_CREAT | O_WRONLY, 0777);
-	ft_putnbr_fd(2, fd);
+    int fd = 1; // Standard output
+	
+    ft_putnbr_fd(12345, fd);
+    ft_putchar_fd('\n', fd);
+    ft_putnbr_fd(-67890, fd);
+    ft_putchar_fd('\n', fd);
+    ft_putnbr_fd(-2147483648, fd);
+    ft_putchar_fd('\n', fd);
+    return 0;
 } */

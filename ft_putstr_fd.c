@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 11:49:38 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/23 10:52:48 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/30 19:40:37 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,13 @@ void	ft_putstr_fd(char *s, int fd)
 	}
 }
 
-/* int main()
+/* int	main(void)
 {
-	int fd = open("teste.txt", O_CREAT | O_WRONLY, 0777);
-	ft_putstr_fd("teste", 1);
+    int fd = 1; // Standard output (stdout)
+
+    ft_putstr_fd("Hello, World!\n", fd);
+    ft_putstr_fd("Testing ft_putstr_fd function.\n", fd);
+    ft_putstr_fd("This is another line of text.\n", fd);
+    
+    return (0);
 } */

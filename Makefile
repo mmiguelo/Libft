@@ -16,11 +16,9 @@
 #==============================================================================#
 
 NAME = libft.a
-EXEC = libft_tester.out
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra -g
 RM = rm -f
-
 
 
 #==============================================================================#
@@ -76,9 +74,6 @@ BONUS = ft_lstnew.c \
 
 BONUS_OBJ = $(BONUS:.c=.o)
 
-SRC_TESTS = main.c 
-
-OBJ_TEST = $(SRC_TESTS:.c=.o)
 
 #==============================================================================#
 #                                    RULES                                     #
@@ -91,9 +86,6 @@ $(NAME): $(OBJ)
 
 bonus: $(BONUS) all $(BONUS_OBJ)
 		ar rcs $(NAME) $(OBJ) $(BONUS_OBJ)
-
-test: $(NAME)
-		$(CC) $(CFLAGS) main.c $(NAME) -o $(EXEC) 
 
 clean:
 		$(RM) $(OBJ) $(BONUS_OBJ)
