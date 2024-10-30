@@ -48,3 +48,13 @@ size_t	ft_strlcat(char *dst, char *src, size_t size)
 		length_dst = size;
 	return (length_dst + length_src);
 }
+
+/* int	main(void)
+{
+	char dest[20] = "Hello";
+	char *source = " World!";
+
+	ft_strlcat(dest, source, sizeof(dest));
+	printf("%s", dest);
+	return(0);
+} */
