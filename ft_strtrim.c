@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 11:45:50 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/23 15:46:01 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/30 17:16:46 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,3 +68,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	new[i] = '\0';
 	return (new);
 }
+
+/* int	main(void)
+{
+	char	*str = " *bush* test in this str *bush* ";
+	char	*set = " *bush* ";
+
+	printf("original string: %s\n", str);
+	printf("After trimming: %s\n", ft_strtrim(str, set));
+	return (0);
+} */
