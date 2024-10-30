@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 12:31:49 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/22 19:04:03 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/30 17:03:25 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,16 +39,15 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-/* #include <strings.h>
-#include <string.h>
+
+/* #include <string.h>
 
 int	main()
 {
-	char *s1 = "A";
- 	size_t max = strlen(s1) + 1;
- 	//char *i1 = strnstr(s1, s1, max);
- 	char *i2 = ft_strnstr(s1, s1, max);
-	//printf("%s\n", i1);
-	printf("%s\n", i2);
+	char	*big = "This is a string";
+	char	*little = "a";
+ 	size_t	max = strlen(big) + 1;
+
+	printf("%s", ft_strnstr(big, little, max));
 	return (0);
 } */
