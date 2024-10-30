@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 11:48:21 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/22 15:23:55 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/30 15:39:03 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,17 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
+/* static void	ft_charup(unsigned int i, char *c)
+{
+	if (*c >= 'a' && *c <= 'z')
+		*c -= 32;
+}
+int	main(void)
+{
+	char	str[] = "test in this";
+	
+	printf("original string: %s\n", str);
+	ft_striteri(str, ft_charup);
+	printf("Modified string: %s\n", str);
+	return(0);
+} */

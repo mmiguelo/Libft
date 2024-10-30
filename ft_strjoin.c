@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 11:45:13 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/23 15:18:32 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/10/30 15:42:56 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcpy(new + s1_length, (char *) s2, s2_length + 1);
 	return (new);
 }
+
+/* int	main(void)
+{
+	char	*str1;
+	char	*str2;
+
+	str1 = "Hello,";
+	str2 = "World!";
+	printf("%s", ft_strjoin(str1, str2));
+} */
