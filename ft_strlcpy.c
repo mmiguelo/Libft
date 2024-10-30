@@ -41,7 +41,7 @@ int	ft_strlcpy(char *dst, char *src, size_t size)
 	return (length);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	src[] = "test this";
 	char	dest[] = "this space is blank";
@@ -49,4 +49,4 @@ int	main(void)
 	ft_strlcpy(dest, src, sizeof(src));
 	printf("%s", dest);
 	return (0);
-}
+} */
