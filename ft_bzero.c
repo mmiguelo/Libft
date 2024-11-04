@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 10:45:58 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/29 11:48:02 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/11/04 16:14:26 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@ void	ft_bzero(void *s, size_t n)
 	unsigned char	*str;
 	size_t			i;
 
-	if (s == NULL || n == 0)
-		return ;
 	str = (unsigned char *) s;
 	i = 0;
 	while (n--)
@@ -36,18 +34,18 @@ void	ft_bzero(void *s, size_t n)
 
 /* int	main(void)
 {
-	char str[50] = "ola";
+	char *str = "";
 	int	i = 0;
 	int len = 4;
 
-	printf("Str before bzero:");
-	printf("\n%s\n", str);
-	printf("Str after bzero:");
+	// printf("Str before bzero:");
+	// printf("\n%s\n", str);
+	// printf("Str after bzero:");
 	ft_bzero(str, 4);
 	printf("\n");
-	while (i < len)
-	{
-		printf("%d", str[i]);
-		i++;
-	}
+	// while (i < len)
+	// {
+	// 	printf("%d", str[i]);
+	// 	i++;
+	// }
 } */

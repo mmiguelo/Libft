@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 10:45:47 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/30 13:40:39 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/11/04 16:16:13 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	s = (unsigned char *) src;
 	d = (unsigned char *) dest;
-	if (!dest || !src)
-		return (0);
 	if (s < d)
 	{
 		while (n-- > 0)

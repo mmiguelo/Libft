@@ -6,7 +6,7 @@
 /*   By: mmiguelo <mmiguelo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 10:51:39 by mmiguelo          #+#    #+#             */
-/*   Updated: 2024/10/29 15:08:48 by mmiguelo         ###   ########.fr       */
+/*   Updated: 2024/11/04 17:29:47 by mmiguelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	unsigned char	chr;
 	size_t			i;
 
-	if (!s)
-		return (0);
 	str = (unsigned char *) s;
 	chr = (unsigned char) c;
 	i = -1;
