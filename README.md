@@ -1,4 +1,4 @@
-![# Libft](https://github.com/mmiguelo/42_project_badges/blob/main/covers/cover-libft-bonus.png)
+![# Libft](https://github.com/mmiguelo/42-project-badges/blob/main/covers/cover-libft.png)
 
 <p>
     <img src="https://img.shields.io/badge/score-125%20%2F%20100-success?style=for-the-badge" />
