@@ -75,8 +75,14 @@ make
 	<summary style="font-size: 18px; font-weight: bold;">Mandatory Part 1 📝</summary>
 <ul>
 
+
+
+
 | Functions | Description |
 | --------------- | --------------- |
+
+
+
 </details>
 
 <p align="right">(<a href="#readme-top">get to top</a>)</p>
