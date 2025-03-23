@@ -9,11 +9,11 @@
 </p>
 
 
-<h3 align=center>Table o´Contents</h3>
+<h3 align=center>Table of Contents</h3>
 
 <!-- mtoc-start -->
 
-* [📚 About](#about-)
+* [About 📚](#about-)
 
 
 <!-- mtoc-end -->
@@ -25,7 +25,7 @@
 <div align=left>
 
 
-# 📚 About
+# About 📚
 
 libft is a custom C library developed as part of the 42 curriculum. It contains a collection of essential functions that are typically found in the C standard library, with some additional features.
 
