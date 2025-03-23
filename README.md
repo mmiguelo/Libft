@@ -17,6 +17,7 @@
 * [Features 🛠️](#features-)
 * [Install and Compile ⚙️](#installation-)
 * [Makefile rules 🔧](#makefile-rules-)
+* [Link and Description 🔗](#link-and-description)
 
 
 <!-- mtoc-end -->
@@ -29,11 +30,11 @@
 
 
 # About 📚
-
+___
 libft is a custom C library developed as part of the 42 curriculum. It contains a collection of essential functions that are typically found in the C standard library, with some additional features.
 
 # Features 🛠️
-
+___
 - String manipulation functions
 - Memory management functions
 - Conversion functions
@@ -41,7 +42,7 @@ libft is a custom C library developed as part of the 42 curriculum. It contains 
 - Diverse Bool functions
 
 # Install and Compile ⚙️
-
+___
 1. To install libft, simply clone the repository and run the make command to compile the library.
 
 ```
@@ -62,7 +63,7 @@ make
 ```
 
 # Makefile rules 🔧
-
+___
 - To compile `libft` with **mandatory** files: `make`
 
 - To compile `libft` with **bonus** files: `make bonus`
@@ -71,18 +72,13 @@ make
 
 - To clean the working directory of **object files** (**.o**) and **archive** (**.a**) files: `make fclean`
 
+# Link and Description 🔗
+___
 <details>
 	<summary style="font-size: 18px; font-weight: bold;">Mandatory Part 1 📝</summary>
 <ul>
-
-
-
-
 | Functions | Description |
 | --------------- | --------------- |
-
-
-
 </details>
 
 <p align="right">(<a href="#readme-top">get to top</a>)</p>
