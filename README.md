@@ -140,4 +140,18 @@ ___
 	<summary style="font-size: 18px; font-weight: bold;">Bonus Part 📝</summary>
 	<ul>
 
+| Functions | Description |
+| --------------- | --------------- |
+| ft_lstnew | Creates a new list element (node) with the given content. |
+| ft_lstadd_front | Adds a new element to the beginning of the list. |
+| ft_lstsize | Returns the size (number of elements) of the list. |
+| ft_lstlast | Returns the last element (node) of the list. |
+| ft_lstadd_back | Adds a new element to the end of the list. |
+| ft_lstdelone | Deletes a single list element (node) and frees its memory. |
+| ft_lstclear | Deletes all elements of the list and frees their memory. |
+| ft_lstiter | Iterates over the list and applies a function to each element. |
+| ft_lstmap | Iterates over the list and applies a function to each element, creating a new list with the results. |
+
+</details>
+
 <p align="right">(<a href="#readme-top">get to top</a>)</p>
