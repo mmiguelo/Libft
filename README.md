@@ -15,7 +15,7 @@
 
 * [About 📚](#about-)
 * [Features 🛠️](#features-)
-* [Installation ⚙️](#installation-)
+* [Install and Compile ⚙️](#installation-)
 
 
 <!-- mtoc-end -->
@@ -39,9 +39,9 @@ libft is a custom C library developed as part of the 42 curriculum. It contains 
 - List manipulation functions
 - Diverse Bool functions
 
-# Installation ⚙️
+# Install and Compile ⚙️
 
-To install libft, simply clone the repository and run the make command to compile the library.
+1. To install libft, simply clone the repository and run the make command to compile the library.
 
 ```
 git clone https://github.com/mmiguelo/Libft.git
