@@ -86,7 +86,7 @@ ___
 	
 | Functions | Description |
 | --------------- | --------------- |
-| [ft_salpha](https://github.com/mmiguelo/Libft/blob/main/ft_salpha.c) | Checks if the character is alphabetic (a-z, A-Z). |
+| [ft_isalpha](https://github.com/mmiguelo/Libft/blob/main/ft_isalpha.c) | Checks if the character is alphabetic (a-z, A-Z). |
 | [ft_isdigit](https://github.com/mmiguelo/Libft/blob/main/ft_isdigit.c) | Checks if the character is a digit (0-9). |
 | [ft_isalnum](https://github.com/mmiguelo/Libft/blob/main/ft_isalnum.c) | Checks if the character is alphanumeric (a-z, A-Z, 0-9). |
 | [ft_isascii](https://github.com/mmiguelo/Libft/blob/main/ft_isascii.c) | Checks if the character is a valid ASCII character (0-127). |
