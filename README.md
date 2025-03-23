@@ -10,7 +10,7 @@
 
 # Table of Contents
 
-1. [About](#About)
+1. [📚 About](#about-)
 2. [Installation](#installation)
 3. [Usage](#usage)
 4. [Contributing](#contributing)
