@@ -113,4 +113,12 @@ ___
 	
 </details>
 
+___
+
+<details>
+	<summary style="font-size: 18px; font-weight: bold;">Mandatory Part 2 📝</summary>
+	<ul>
+	
+| Functions | Description |
+| --------------- | --------------- |
 <p align="right">(<a href="#readme-top">get to top</a>)</p>
