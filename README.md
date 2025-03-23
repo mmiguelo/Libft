@@ -8,6 +8,13 @@
     <img src="https://img.shields.io/github/last-commit/mmiguelo/Libft?style=for-the-badge" />
 </p>
 
+# Table of Contents
+
+1. [About](#About)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [License](#license)
 
 📚 About
 
