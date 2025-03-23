@@ -84,31 +84,32 @@ ___
 	<summary style="font-size: 18px; font-weight: bold;">Mandatory Part 1 📝</summary>
 <ul>
 	
-| Functions | Description |
-| --------------- | --------------- |
-| ft_salpha | Checks if the character is alphabetic (a-z, A-Z). |
-| ft_isdigit | Checks if the character is a digit (0-9). |
-| ft_isalnum | Checks if the character is alphanumeric (a-z, A-Z, 0-9). |
-| ft_isascii | Checks if the character is a valid ASCII character (0-127). |
-| ft_isprint | Checks if the character is printable (space, punctuation, numbers, and letters). |
-| ft_strlen | Returns the length of a string (excluding the null terminator). |
-| ft_strlcpy | Copies a string into a buffer with a size limit, ensuring it’s null-terminated. |
-| ft_strlcat | Appends a string to another with a size limit, ensuring it’s null-terminated. |
-| ft_strchr | Finds the first occurrence of a character in a string. |
-| ft_strrchr | Finds the last occurrence of a character in a string. |
-| ft_strncmp | Compares two strings up to a given number of characters. |
-| ft_strnstr | Finds the first occurrence of a substring in a string, up to a given length. |
-| ft_bzero | Sets a block of memory to zero (clears memory). |
-| ft_calloc | Allocates memory and sets it to zero. |
-| ft_strdup | Duplicates a string by allocating memory and copying the string into it. |
-| ft_memset | Fills a block of memory with a specific byte. |
-| ft_memcpy | Copies a block of memory from one location to another. |
-| ft_memmove | Moves a block of memory from one location to another, handling overlapping memory regions. |
-| ft_memchr | Finds the first occurrence of a byte in a block of memory. |
-| ft_memcmp | Compares two blocks of memory byte by byte. |
-| ft_toupper | Converts a lowercase character to uppercase. |
-| ft_tolower | Converts an uppercase character to lowercase. |
-| [ft_atoi](https://github.com/mmiguelo/Libft/blob/main/ft_atoi.c)| Converts a string to an integer, handling optional white spaces and signs. |
+| Functions                                 | Description                                                                                           |
+| ----------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| [ft_salpha](https://github.com/mmiguelo/Libft/blob/main/ft_salpha.c) | Checks if the character is alphabetic (a-z, A-Z).                                                     |
+| [ft_isdigit](https://github.com/mmiguelo/Libft/blob/main/ft_isdigit.c) | Checks if the character is a digit (0-9).                                                             |
+| [ft_isalnum](https://github.com/mmiguelo/Libft/blob/main/ft_isalnum.c) | Checks if the character is alphanumeric (a-z, A-Z, 0-9).                                              |
+| [ft_isascii](https://github.com/mmiguelo/Libft/blob/main/ft_isascii.c) | Checks if the character is a valid ASCII character (0-127).                                           |
+| [ft_isprint](https://github.com/mmiguelo/Libft/blob/main/ft_isprint.c) | Checks if the character is printable (space, punctuation, numbers, and letters).                      |
+| [ft_strlen](https://github.com/mmiguelo/Libft/blob/main/ft_strlen.c) | Returns the length of a string (excluding the null terminator).                                        |
+| [ft_strlcpy](https://github.com/mmiguelo/Libft/blob/main/ft_strlcpy.c) | Copies a string into a buffer with a size limit, ensuring it’s null-terminated.                       |
+| [ft_strlcat](https://github.com/mmiguelo/Libft/blob/main/ft_strlcat.c) | Appends a string to another with a size limit, ensuring it’s null-terminated.                         |
+| [ft_strchr](https://github.com/mmiguelo/Libft/blob/main/ft_strchr.c) | Finds the first occurrence of a character in a string.                                                |
+| [ft_strrchr](https://github.com/mmiguelo/Libft/blob/main/ft_strrchr.c) | Finds the last occurrence of a character in a string.                                                 |
+| [ft_strncmp](https://github.com/mmiguelo/Libft/blob/main/ft_strncmp.c) | Compares two strings up to a given number of characters.                                              |
+| [ft_strnstr](https://github.com/mmiguelo/Libft/blob/main/ft_strnstr.c) | Finds the first occurrence of a substring in a string, up to a given length.                          |
+| [ft_bzero](https://github.com/mmiguelo/Libft/blob/main/ft_bzero.c) | Sets a block of memory to zero (clears memory).                                                       |
+| [ft_calloc](https://github.com/mmiguelo/Libft/blob/main/ft_calloc.c) | Allocates memory and sets it to zero.                                                                 |
+| [ft_strdup](https://github.com/mmiguelo/Libft/blob/main/ft_strdup.c) | Duplicates a string by allocating memory and copying the string into it.                              |
+| [ft_memset](https://github.com/mmiguelo/Libft/blob/main/ft_memset.c) | Fills a block of memory with a specific byte.                                                         |
+| [ft_memcpy](https://github.com/mmiguelo/Libft/blob/main/ft_memcpy.c) | Copies a block of memory from one location to another.                                                |
+| [ft_memmove](https://github.com/mmiguelo/Libft/blob/main/ft_memmove.c) | Moves a block of memory from one location to another, handling overlapping memory regions.            |
+| [ft_memchr](https://github.com/mmiguelo/Libft/blob/main/ft_memchr.c) | Finds the first occurrence of a byte in a block of memory.                                            |
+| [ft_memcmp](https://github.com/mmiguelo/Libft/blob/main/ft_memcmp.c) | Compares two blocks of memory byte by byte.                                                           |
+| [ft_toupper](https://github.com/mmiguelo/Libft/blob/main/ft_toupper.c) | Converts a lowercase character to uppercase.                                                          |
+| [ft_tolower](https://github.com/mmiguelo/Libft/blob/main/ft_tolower.c) | Converts an uppercase character to lowercase.                                                        |
+| [ft_atoi](https://github.com/mmiguelo/Libft/blob/main/ft_atoi.c) | Converts a string to an integer, handling optional white spaces and signs.                            |
+
 
 </details>
 
