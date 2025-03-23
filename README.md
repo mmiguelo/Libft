@@ -80,29 +80,30 @@ ___
 	
 | Functions | Description |
 | --------------- | --------------- |
-| ft_salpha | --------------- |
-| ft_isdigit | --------------- |
-| ft_isalnum | --------------- |
-| ft_isascii | --------------- |
-| ft_isprint | --------------- |
-| ft_strlen | --------------- |
-| ft_strlcpy | --------------- |
-| ft_strlcat | --------------- |
-| ft_strchr | --------------- |
-| ft_strrchr | --------------- |
-| ft_strncmp | --------------- |
-| ft_strnstr | --------------- |
-| ft_bzero | --------------- |
-| ft_calloc | --------------- |
-| ft_strdup | --------------- |
-| ft_memset | --------------- |
-| ft_memcpy | --------------- |
-| ft_memmove | --------------- |
-| ft_memchr | --------------- |
-| ft_memcmp | --------------- |
-| ft_toupper | --------------- |
-| ft_tolower | --------------- |
-| ft_atoi | --------------- |
+| ft_salpha | Checks if the character is alphabetic (a-z, A-Z). |
+| ft_isdigit | Checks if the character is a digit (0-9). |
+| ft_isalnum | Checks if the character is alphanumeric (a-z, A-Z, 0-9). |
+| ft_isascii | Checks if the character is a valid ASCII character (0-127). |
+| ft_isprint | Checks if the character is printable (space, punctuation, numbers, and letters). |
+| ft_strlen | Returns the length of a string (excluding the null terminator). |
+| ft_strlcpy | Copies a string into a buffer with a size limit, ensuring it’s null-terminated. |
+| ft_strlcat | Appends a string to another with a size limit, ensuring it’s null-terminated. |
+| ft_strchr | Finds the first occurrence of a character in a string. |
+| ft_strrchr | Finds the last occurrence of a character in a string. |
+| ft_strncmp | Compares two strings up to a given number of characters. |
+| ft_strnstr | Finds the first occurrence of a substring in a string, up to a given length. |
+| ft_bzero | Sets a block of memory to zero (clears memory). |
+| ft_calloc | Allocates memory and sets it to zero. |
+| ft_strdup | Duplicates a string by allocating memory and copying the string into it. |
+| ft_memset | Fills a block of memory with a specific byte. |
+| ft_memcpy | Copies a block of memory from one location to another. |
+| ft_memmove | Moves a block of memory from one location to another, handling overlapping memory regions. |
+| ft_memchr | Finds the first occurrence of a byte in a block of memory. |
+| ft_memcmp | Compares two blocks of memory byte by byte. |
+| ft_toupper | Converts a lowercase character to uppercase. |
+| ft_tolower | Converts an uppercase character to lowercase. |
+| ft_atoi | Converts a string to an integer, handling optional white spaces and signs. |
+
 	
 </details>
 
