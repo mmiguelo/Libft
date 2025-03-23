@@ -54,4 +54,9 @@ cd libft
 make
 ```
 
-3. 
+3. To use the library on your code base `#include` the following header:
+
+```c
+#include "libft.h"
+```
+
