@@ -121,17 +121,18 @@ ___
 	
 | Functions | Description |
 | --------------- | --------------- |
-| ft_substr | --------------- |
-| ft_strjoin | --------------- |
-| ft_strtrim | --------------- |
-| ft_split | --------------- |
-| ft_itoa | --------------- |
-| ft_strmapi | --------------- |
-| ft_striteri | --------------- |
-| ft_putchar_fd | --------------- |
-| ft_putstr_fd | --------------- |
-| ft_putendl_fd | --------------- |
-| ft_putnbr_fd | --------------- |
+| ft_substr | Allocates and returns a substring from a string, starting at a specified index and having a limit. |
+| ft_strjoin | Allocates and returns a new string by concatenating two strings. |
+| ft_strtrim | Allocates and returns a new string, trimming the specified characters from both ends of a string. |
+| ft_split | Allocates and returns an array of strings by splitting a string at a given delimiter. |
+| ft_itoa | Converts an integer to a string representation. |
+| ft_strmapi | Applies a function to each character of a string and returns a new string with the results. |
+| ft_striteri | Applies a function to each character of a string (with index) for side effects. |
+| ft_putchar_fd | Writes a character to a given file descriptor. |
+| ft_putstr_fd | Writes a string to a given file descriptor. |
+| ft_putendl_fd | Writes a string followed by a newline to a given file descriptor. |
+| ft_putnbr_fd | Writes an integer as a string to a given file descriptor. |
+
 
 
 <p align="right">(<a href="#readme-top">get to top</a>)</p>
