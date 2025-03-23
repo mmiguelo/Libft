@@ -33,7 +33,11 @@
 ___
 libft is a custom C library developed as part of the 42 curriculum. It contains a collection of essential functions that are typically found in the C standard library, with some additional features.
 
-> **Disclaimer**: This code base follows a peculiar coding style, to pass [Norminette](https://github.com/42School/norminette)'s' queer syntactical tests, a requirement for most projects at 42 School.
+> **Disclaimer**: This code base follows a peculiar coding style, which we have to strictly obey in order to pass -> [Norminette](https://github.com/42School/norminette)'s' queer syntactical tests, a requirement for most projects at 42 School.
+> - Maximum 25 lines per function and 5 functions per file;
+> - No variable declarations and assignments in the same line;
+> - Forbiden structures: 'for', 'switch', 'goto' and 'case';
+> - No more than 5 variables per function.
 
 >> ❗ **Important**: If you happen to be a student at 42, you are encouraged to go through the process of writing these functions and testing them yourself. Feel free to use this repository as a research source, but beware of the `copy paste` monster! Do not use code you only understand partially, it will make later projects much harder to manage! If you passed the piscine you should be able to complete this project successfully. Be thorough, be persistent and be patient with yourself!
 
