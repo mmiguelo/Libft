@@ -8,15 +8,24 @@
     <img src="https://img.shields.io/github/last-commit/mmiguelo/Libft?style=for-the-badge" />
 </p>
 
-# Table of Contents
 
-1. [📚 About](#about-)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Contributing](#contributing)
-5. [License](#license)
+<h3 align=center>Table o´Contents</h3>
 
-📚 About
+<!-- mtoc-start -->
+
+* [📚 About](#about-)
+
+
+<!-- mtoc-end -->
+
+<div/>
+
+
+
+<div align=left>
+
+
+# 📚 About
 
 libft is a custom C library developed as part of the 42 curriculum. It contains a collection of essential functions that are typically found in the C standard library, with some additional features.
 
