@@ -16,6 +16,7 @@
 * [About 📚](#about-)
 * [Features 🛠️](#features-)
 * [Install and Compile ⚙️](#installation-)
+* [Makefile rules 🔧](#makefile-rules-)
 
 
 <!-- mtoc-end -->
@@ -60,3 +61,12 @@ make
 #include "libft.h"
 ```
 
+# Makefile rules 🔧
+
+- To compile `libft` with **mandatory** files: `make`
+
+- To compile `libft` with **bonus** files: `make bonus`
+
+- To clean the working directory of **object files** (**.o**): `make clean`
+
+- To clean the working directory of **object files** (**.o**) and **archive** (**.a**) files: `make fclean`
