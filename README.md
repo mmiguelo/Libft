@@ -142,17 +142,18 @@ ___
 	<summary style="font-size: 18px; font-weight: bold;">Bonus Part 📝</summary>
 	<ul>
 
-| Functions | Description |
+| Functions| Description|
 | --------------- | --------------- |
-| ft_lstnew | Creates a new list element (node) with the given content. |
-| ft_lstadd_front | Adds a new element to the beginning of the list. |
-| ft_lstsize | Returns the size (number of elements) of the list. |
-| ft_lstlast | Returns the last element (node) of the list. |
-| ft_lstadd_back | Adds a new element to the end of the list. |
-| ft_lstdelone | Deletes a single list element (node) and frees its memory. |
-| ft_lstclear | Deletes all elements of the list and frees their memory. |
-| ft_lstiter | Iterates over the list and applies a function to each element. |
-| ft_lstmap | Iterates over the list and applies a function to each element, creating a new list with the results. |
+| [ft_lstnew](https://github.com/mmiguelo/Libft/blob/main/ft_lstnew.c) | Creates a new list element (node) with the given content.|
+| [ft_lstadd_front](https://github.com/mmiguelo/Libft/blob/main/ft_lstadd_front.c) | Adds a new element to the beginning of the list.|
+| [ft_lstsize](https://github.com/mmiguelo/Libft/blob/main/ft_lstsize.c) | Returns the size (number of elements) of the list.|
+| [ft_lstlast](https://github.com/mmiguelo/Libft/blob/main/ft_lstlast.c) | Returns the last element (node) of the list.|
+| [ft_lstadd_back](https://github.com/mmiguelo/Libft/blob/main/ft_lstadd_back.c) | Adds a new element to the end of the list.|
+| [ft_lstdelone](https://github.com/mmiguelo/Libft/blob/main/ft_lstdelone.c) | Deletes a single list element (node) and frees its memory.|
+| [ft_lstclear](https://github.com/mmiguelo/Libft/blob/main/ft_lstclear.c) | Deletes all elements of the list and frees their memory.|
+| [ft_lstiter](https://github.com/mmiguelo/Libft/blob/main/ft_lstiter.c) | Iterates over the list and applies a function to each element.|
+| [ft_lstmap](https://github.com/mmiguelo/Libft/blob/main/ft_lstmap.c) | Iterates over the list and applies a function to each element, creating a new list with the results.|
+
 
 </details>
 
