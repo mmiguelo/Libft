@@ -110,7 +110,6 @@ ___
 | ft_tolower | Converts an uppercase character to lowercase. |
 | ft_atoi | Converts a string to an integer, handling optional white spaces and signs. |
 
-	
 </details>
 
 ___
@@ -133,6 +132,12 @@ ___
 | ft_putendl_fd | Writes a string followed by a newline to a given file descriptor. |
 | ft_putnbr_fd | Writes an integer as a string to a given file descriptor. |
 
+</details>
 
+___
+
+<details>
+	<summary style="font-size: 18px; font-weight: bold;">Bonus Part 📝</summary>
+	<ul>
 
 <p align="right">(<a href="#readme-top">get to top</a>)</p>
