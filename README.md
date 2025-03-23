@@ -108,7 +108,7 @@ ___
 | ft_memcmp | Compares two blocks of memory byte by byte. |
 | ft_toupper | Converts a lowercase character to uppercase. |
 | ft_tolower | Converts an uppercase character to lowercase. |
-| ft_atoi | Converts a string to an integer, handling optional white spaces and signs. |
+| [ft_atoi](https://github.com/mmiguelo/Libft/blob/main/ft_atoi.c)| Converts a string to an integer, handling optional white spaces and signs. |
 
 </details>
 
