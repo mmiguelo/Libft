@@ -121,17 +121,18 @@ ___
 	
 | Functions | Description |
 | --------------- | --------------- |
-| ft_substr | Allocates and returns a substring from a string, starting at a specified index and having a limit. |
-| ft_strjoin | Allocates and returns a new string by concatenating two strings. |
-| ft_strtrim | Allocates and returns a new string, trimming the specified characters from both ends of a string. |
-| ft_split | Allocates and returns an array of strings by splitting a string at a given delimiter. |
-| ft_itoa | Converts an integer to a string representation. |
-| ft_strmapi | Applies a function to each character of a string and returns a new string with the results. |
-| ft_striteri | Applies a function to each character of a string (with index) for side effects. |
-| ft_putchar_fd | Writes a character to a given file descriptor. |
-| ft_putstr_fd | Writes a string to a given file descriptor. |
-| ft_putendl_fd | Writes a string followed by a newline to a given file descriptor. |
-| ft_putnbr_fd | Writes an integer as a string to a given file descriptor. |
+| [ft_substr](https://github.com/mmiguelo/Libft/blob/main/ft_substr.c) | Allocates and returns a substring from a string, starting at a specified index and having a limit. |
+| [ft_strjoin](https://github.com/mmiguelo/Libft/blob/main/ft_strjoin.c) | Allocates and returns a new string by concatenating two strings. |
+| [ft_strtrim](https://github.com/mmiguelo/Libft/blob/main/ft_strtrim.c) | Allocates and returns a new string, trimming the specified characters from both ends of a string. |
+| [ft_split](https://github.com/mmiguelo/Libft/blob/main/ft_split.c) | Allocates and returns an array of strings by splitting a string at a given delimiter. |
+| [ft_itoa](https://github.com/mmiguelo/Libft/blob/main/ft_itoa.c) | Converts an integer to a string representation. |
+| [ft_strmapi](https://github.com/mmiguelo/Libft/blob/main/ft_strmapi.c) | Applies a function to each character of a string and returns a new string with the results. |
+| [ft_striteri](https://github.com/mmiguelo/Libft/blob/main/ft_striteri.c) | Applies a function to each character of a string (with index) for side effects. |
+| [ft_putchar_fd](https://github.com/mmiguelo/Libft/blob/main/ft_putchar_fd.c) | Writes a character to a given file descriptor. |
+| [ft_putstr_fd](https://github.com/mmiguelo/Libft/blob/main/ft_putstr_fd.c) | Writes a string to a given file descriptor. |
+| [ft_putendl_fd](https://github.com/mmiguelo/Libft/blob/main/ft_putendl_fd.c) | Writes a string followed by a newline to a given file descriptor. |
+| [ft_putnbr_fd](https://github.com/mmiguelo/Libft/blob/main/ft_putnbr_fd.c) | Writes an integer as a string to a given file descriptor. |
+
 
 </details>
 
