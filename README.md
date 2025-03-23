@@ -44,5 +44,14 @@ libft is a custom C library developed as part of the 42 curriculum. It contains 
 1. To install libft, simply clone the repository and run the make command to compile the library.
 
 ```
-git clone https://github.com/mmiguelo/Libft.git
+git clone https://github.com/mmiguelo/Libft.git libft
 ```
+
+2. Go inside the project folder and run `make`:
+
+```
+cd libft
+make
+```
+
+3. 
