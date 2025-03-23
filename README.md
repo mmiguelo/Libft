@@ -72,5 +72,7 @@ make
 - To clean the working directory of **object files** (**.o**) and **archive** (**.a**) files: `make fclean`
 
 
+| Functions | Description |
+| --------------- | --------------- |
 
 <p align="right">(<a href="#readme-top">get to top</a>)</p>
